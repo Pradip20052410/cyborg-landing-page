@@ -202,7 +202,7 @@ MIT License — Free to use, modify, and distribute.
 ---
 
 ## 👨‍💻 Author
-
+Pradip Goswami
 **Built for IIT Bombay TechProject**
 
 > *"Where Human Meets Machine · Secured by Quantum AI"*
@@ -211,6 +211,6 @@ MIT License — Free to use, modify, and distribute.
 
 <div align="center">
 
-**NEXUS//CYBORG** · Built with ❤️ and `#00f5ff`
+**NEXUS//CYBORG** · Built By Pradip Goswami with ❤️ and `#00f5ff`
 
 </div>
