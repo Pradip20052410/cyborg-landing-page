@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEXUS//CYBORG — AI Cybersecurity Platform</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+<!-- Custom cursor -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- Backgrounds -->
+<canvas id="particleCanvas"></canvas>
+<div class="grid-bg"></div>
+<div class="scanline"></div>
+
+<!---------- Navbar ---------->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">NEXUS<span>//</span>CYBORG</a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#technology">Technology</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#cta">Contact</a></li>
+  </ul>
+  <a href="#cta" class="nav-cta">Get Access</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#features" onclick="closeMenu()">Features</a>
+  <a href="#technology" onclick="closeMenu()">Technology</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#cta" onclick="closeMenu()">Contact</a>
+</div>
+
+<!---------- Hero ---------->
+<section id="home">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag">Neural Security Protocol v4.7</div>
+      <h1 class="hero-title">
+        <span class="line1">The Future of</span>
+        <span class="line2"><span id="typed-text"></span><span id="cursor-blink"></span></span>
+      </h1>
+      <p class="hero-sub">
+        NEXUS//CYBORG harnesses quantum-level AI to deliver unbreachable cybersecurity infrastructure — where human intelligence fuses with machine precision.
+      </p>
+      <div class="hero-btns">
+        <a href="#features" class="btn-primary">Initialize System</a>
+        <a href="#technology" class="btn-secondary">View Architecture</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-val">99.9%</span><span class="stat-label">Threat Block Rate</span></div>
+        <div class="stat"><span class="stat-val">0.4ms</span><span class="stat-label">Response Time</span></div>
+        <div class="stat"><span class="stat-val">12K+</span><span class="stat-label">Nodes Protected</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="cyborg-frame">
+        <div class="cyborg-ring"></div>
+        <div class="cyborg-ring"></div>
+        <div class="cyborg-ring"></div>
+        <div class="cyborg-core">
+          <div class="core-eye"></div>
+          <div class="core-bars">
+            <div class="core-bar"></div>
+            <div class="core-bar"></div>
+            <div class="core-bar"></div>
+          </div>
+        </div>
+        <div class="float-chip">SYS::ACTIVE</div>
+        <div class="float-chip">NEURAL_NET 98.3%</div>
+        <div class="float-chip">ENCRYPT_ON</div>
+        <div class="float-chip">FIREWALL::UP</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---------- FEATURES ---------->
+<section id="features">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">Core Capabilities</div>
+      <h2 class="section-title">Engineered for<br>Cyber Dominance</h2>
+      <div class="divider"></div>
+      <p style="color:var(--muted);max-width:520px;line-height:1.8;font-size:.95rem;">
+        Four pillars of next-generation cyber defense, each powered by adaptive AI and quantum-secure algorithms.
+      </p>
+    </div>
+
+    <div class="features-grid">
+      <!-- Card 1 -->
+      <div class="feat-card" style="transition-delay:.1s">
+        <span class="feat-number">01</span>
+        <div class="feat-icon-wrap icon-cyan">🤖</div>
+        <h3 class="feat-title">AI Threat Intelligence</h3>
+        <p class="feat-desc">Self-evolving neural networks map, predict, and neutralize zero-day threats in real-time — before they breach your perimeter.</p>
+        <span class="feat-tag">Active Learning</span>
+      </div>
+      <!-- Card 2 -->
+      <div class="feat-card" style="transition-delay:.2s">
+        <span class="feat-number">02</span>
+        <div class="feat-icon-wrap icon-purple">🔐</div>
+        <h3 class="feat-title">Quantum Encryption</h3>
+        <p class="feat-desc">Post-quantum cryptographic protocols guarantee data integrity even against adversarial quantum computers. Unbreakable by design.</p>
+        <span class="feat-tag" style="color:var(--purple);background:rgba(122,0,255,.06);border-color:rgba(122,0,255,.2)">Q-Safe</span>
+      </div>
+      <!-- Card 3 -->
+      <div class="feat-card" style="transition-delay:.3s">
+        <span class="feat-number">03</span>
+        <div class="feat-icon-wrap icon-green">🧠</div>
+        <h3 class="feat-title">Neural Interface Layer</h3>
+        <p class="feat-desc">Biometric-linked access control merges human cognition with machine authentication for zero-trust identity verification.</p>
+        <span class="feat-tag" style="color:var(--green);background:rgba(0,255,204,.06);border-color:rgba(0,255,204,.2)">BioAuth</span>
+      </div>
+      <!-- Card 4 -->
+      <div class="feat-card" style="transition-delay:.4s">
+        <span class="feat-number">04</span>
+        <div class="feat-icon-wrap icon-pink">🛡️</div>
+        <h3 class="feat-title">Autonomous Cyber Defense</h3>
+        <p class="feat-desc">An always-on, self-healing mesh that isolates intrusions, reroutes traffic, and patches vulnerabilities without human intervention.</p>
+        <span class="feat-tag" style="color:#ff4da6;background:rgba(255,0,128,.06);border-color:rgba(255,0,128,.2)">Self-Healing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---------- Technology ---------->
+<section id="technology">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">System Architecture</div>
+      <h2 class="section-title">Technology Showcase</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="tech-grid">
+      <!-- Left -->
+      <div>
+        <div class="tech-panel" id="progressPanel">
+          <div class="panel-header">
+            <span class="panel-title">SYSTEM_DIAGNOSTICS.EXE</span>
+            <div class="panel-dots"><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-dot"></span></div>
+          </div>
+          <div class="panel-body">
+            <div class="progress-item">
+              <div class="progress-label"><span>Threat Detection Engine</span><span id="p1-val">0%</span></div>
+              <div class="progress-track"><div class="progress-fill fill-cyan" id="p1" data-target="97"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label"><span>Quantum Key Exchange</span><span id="p2-val">0%</span></div>
+              <div class="progress-track"><div class="progress-fill fill-purple" id="p2" data-target="89"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label"><span>Neural Network Accuracy</span><span id="p3-val">0%</span></div>
+              <div class="progress-track"><div class="progress-fill fill-green" id="p3" data-target="94"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label"><span>System Uptime</span><span id="p4-val">0%</span></div>
+              <div class="progress-track"><div class="progress-fill fill-cyan" id="p4" data-target="99"></div></div>
+            </div>
+            <div class="tech-metrics" style="margin-top:1.5rem">
+              <div class="metric-card"><div class="metric-val">4.2T</div><div class="metric-lbl">Events/Day</div></div>
+              <div class="metric-card"><div class="metric-val">256-Q</div><div class="metric-lbl">Key Depth</div></div>
+              <div class="metric-card"><div class="metric-val">7-Layer</div><div class="metric-lbl">AI Defense</div></div>
+              <div class="metric-card"><div class="metric-val">&lt;1ms</div><div class="metric-lbl">Block Latency</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="tech-right">
+        <div class="tech-panel">
+          <div class="panel-header">
+            <span class="panel-title">LIVE_THREAT_MONITOR</span>
+            <div class="panel-dots"><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-dot"></span></div>
+          </div>
+          <div class="panel-body">
+            <div class="log-stream" id="logStream"></div>
+          </div>
+        </div>
+        <div class="tech-panel">
+          <div class="panel-header">
+            <span class="panel-title">NETWORK_TOPOLOGY</span>
+            <div class="panel-dots"><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-dot"></span></div>
+          </div>
+          <div class="panel-body">
+            <canvas id="networkCanvas" width="400" height="160" style="width:100%;border-radius:6px;"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---------- About ---------->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-visual" id="aboutVisual">
+        <div class="about-img-frame">
+          <div class="about-circuit"></div>
+          <div class="about-avatar">🤖</div>
+        </div>
+        <div class="about-badges">
+          <span class="badge">ISO 27001</span>
+          <span class="badge">SOC 2 Type II</span>
+          <span class="badge">FIPS 140-3</span>
+          <span class="badge">Zero Trust</span>
+          <span class="badge">Quantum Ready</span>
+        </div>
+      </div>
+
+      <div class="about-text" id="aboutText">
+        <div class="section-label">Our Mission</div>
+        <h2 class="section-title">Merging Human &<br>Machine Intelligence</h2>
+        <div class="divider"></div>
+        <p>NEXUS//CYBORG was forged at the intersection of <strong>human ingenuity</strong> and <strong>machine intelligence</strong> — a response to an era where traditional defenses crumble against AI-powered adversaries.</p>
+        <p>We believe true security isn't reactive — it's predictive, adaptive, and autonomous. Our platform doesn't wait for threats to materialize; it anticipates and eliminates them at the neural layer.</p>
+        <ul class="about-list">
+          <li>Real-time adversarial AI simulation and red-teaming</li>
+          <li>Federated learning across 12,000+ global nodes</li>
+          <li>Sub-millisecond cryptographic key rotation</li>
+          <li>Autonomous incident response and forensic analysis</li>
+        </ul>
+        <a href="#cta" class="btn-primary" style="display:inline-block;margin-top:1.5rem">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---------- CTA ---------->
+<section id="cta">
+  <div class="cta-inner">
+    <div class="section-label" style="justify-content:center;">Initiate Contact</div>
+    <h2 class="cta-title">Ready to Fortify<br>Your Digital Perimeter?</h2>
+    <p class="cta-sub">Join the vanguard of organizations that have deployed NEXUS//CYBORG to protect their most critical infrastructure. Zero downtime. Zero compromise.</p>
+    <button class="btn-glow" onclick="alert('🚀 Access request received. Our team will contact you within 24 hours.')">
+      REQUEST EARLY ACCESS
+    </button>
+    <p style="margin-top:1.2rem;font-size:.78rem;color:var(--muted);letter-spacing:.06em">No credit card required · Enterprise-grade from day one</p>
+  </div>
+</section>
+
+<!---------- Footer ---------->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="#home" class="footer-logo">NEXUS//CYBORG</a>
+        <p class="footer-tagline">Where Human Meets Machine · Secured by Quantum AI</p>
+      </div>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#technology">Technology</a>
+        <a href="#about">About</a>
+        <a href="#cta">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="X/Twitter">𝕏</a>
+        <a href="https://github.com/Pradip20052410" class="social-btn" title="GitHub">⌥</a>
+        <a href="https://www.linkedin.com/in/pradip-goswami-3aa789366/" class="social-btn" title="LinkedIn">in</a>
+        <a href="#" class="social-btn" title="Discord">◈</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 NEXUS//CYBORG. All systems operational. All rights reserved.</p>
+      <div class="footer-status"><span class="status-dot"></span>All Systems Nominal</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
