@@ -202,7 +202,7 @@ MIT License — Free to use, modify, and distribute.
 ---
 
 ## 👨‍💻 Author
-Pradip Goswami
+Pradip Goswami,
 **Built for IIT Bombay TechProject**
 
 > *"Where Human Meets Machine · Secured by Quantum AI"*
